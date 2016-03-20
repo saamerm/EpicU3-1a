@@ -35,3 +35,23 @@ Note-Controller cant talk to both Model & View. Controller has full uncontrolled
 View Protocols-
 1) Action/Target - Blind messages sent to controller
 2) Delegate - More complicated-Will, should, did. Eg. scroll-Is it allowed?
+
+//12:40pm 3/20/2016
+Automatic reference pointing-Strong & Weak pointers
+(Other languages you dont, to protect from crashes)
+
+Multithreading
+Nonatomic-the setter and getter are not thread safe
+@property sets the setter and getter automatically.
+In the xxx.h (header) file if you write
+@property (strong, nonatomic) NSString *contents
+then automatically the xxx.m (implementation) file includes
+@implementation xxx
+@synthesize contents=_contents;
+-(NSString *) contents
+
+Make pictures squares https://croppola.com
+Make iOS icons https://resizeappicon.com
+Make splash screens http://www.appiconsizes.com/icons
+
+//5:45pm 3/20/2016
